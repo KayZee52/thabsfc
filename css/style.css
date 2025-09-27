@@ -54,6 +54,20 @@
     justify-content: flex-start;
     pointer-events: auto;
 }
+.map-marker {
+    font-size: 3rem;
+    color: #e6c36b;
+    background: rgba(21, 48, 90, 0.8);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 2;
+}
 .btn.btn-primary {
     background: #e6c36b;
     color: #15305a;
@@ -626,6 +640,16 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
+.map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .map-marker {
     font-size: 3rem;
     color: #e6c36b;
@@ -637,6 +661,8 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 2;
 }
 
 .social-media {

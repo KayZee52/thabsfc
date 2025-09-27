@@ -714,6 +714,26 @@ footer {
     color: var(--white);
 }
 
+/* --- MOBILE RESPONSIVE DESIGN --- */
+
+/* Large tablets and small desktops */
+@media (max-width: 1100px) {
+    .content-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+    }
+    .player-spotlight {
+        grid-column: span 2;
+    }
+
+    .hero-banner .next-match {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}
+
+/* Tablets */
 @media (max-width: 900px) {
     .history-grid, .contact-container {
         grid-template-columns: 1fr !important;
@@ -743,5 +763,256 @@ footer {
         left: 20px;
         padding: 12px 18px;
         font-size: 1rem;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    .hero-content {
+        padding: 32px 24px;
+    }
+
+    .calendar-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+    }
+    .calendar-day {
+        padding: 6px 0;
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    .logo-nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+    .logo {
+        height: 60px;
+        margin-right: 0;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    nav ul li a {
+        font-size: 16px;
+        padding: 8px 14px;
+    }
+    .login-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    /* Hero sections */
+    .hero-banner {
+        height: 200px;
+        padding: 20px;
+    }
+    .hero-banner .hero-image {
+        height: 200px;
+    }
+    .hero-banner h1 {
+        font-size: 2rem;
+        top: 15px;
+        left: 15px;
+    }
+    .hero-banner .next-match {
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    .hero-banner .btn.btn-primary {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        height: 200px;
+    }
+    .hero-img, .hero-image {
+        height: 200px;
+    }
+    .hero-text {
+        top: 20px;
+        left: 20px;
+    }
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    .hero-content {
+        padding: 20px;
+    }
+
+    /* Main content */
+    .main {
+        padding: 0 0 60px 0;
+    }
+    .content-section .container {
+        padding: 0 20px;
+    }
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .player-spotlight {
+        grid-column: span 1;
+    }
+
+    /* Sections padding */
+    .news-section, .matches-section, .player-spotlight,
+    .contact-form-section, .find-us-section {
+        padding: 24px 18px;
+        margin-bottom: 24px;
+    }
+
+    /* Typography */
+    .news-section h2, .matches-section h2, .player-spotlight h2,
+    .contact-form-section h2, .find-us-section h2 {
+        font-size: 1.1rem;
+        margin-bottom: 16px;
+    }
+
+    .history-section h2 {
+        font-size: 1.8rem;
+    }
+
+    /* News cards */
+    .news-grid {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .news-card {
+        min-width: auto;
+        max-width: none;
+    }
+
+    /* Calendar */
+    .calendar {
+        padding: 12px 8px 16px 8px;
+    }
+    .calendar-header h3 {
+        font-size: 0.95rem;
+    }
+    .calendar-nav span {
+        font-size: 1rem;
+    }
+
+    /* Player card */
+    .player-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+    .player-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Contact form */
+    .contact-form {
+        gap: 16px;
+    }
+    .form-input, .form-textarea {
+        padding: 12px 14px;
+        font-size: 0.95rem;
+    }
+    .form-textarea {
+        min-height: 100px;
+    }
+
+    /* Map */
+    .map-placeholder {
+        height: 150px;
+    }
+    .map-marker {
+        font-size: 2rem;
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Footer */
+    .footer-bar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 24px 20px;
+        font-size: 18px;
+    }
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        font-size: 14px;
+        padding: 16px 20px;
+    }
+}
+
+/* Small mobile phones */
+@media (max-width: 480px) {
+    /* Even smaller header */
+    .logo-nav {
+        padding: 15px;
+    }
+    .logo {
+        height: 50px;
+    }
+    nav ul {
+        gap: 10px;
+    }
+    nav ul li a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    /* Hero adjustments */
+    .hero-banner {
+        height: 180px;
+        padding: 15px;
+    }
+    .hero-banner .hero-image {
+        height: 180px;
+    }
+    .hero-banner h1 {
+        font-size: 1.6rem;
+        top: 10px;
+        left: 10px;
+    }
+    .hero-banner .next-match {
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+
+    /* Content sections */
+    .content-section .container {
+        padding: 0 15px;
+    }
+    .news-section, .matches-section, .player-spotlight,
+    .contact-form-section, .find-us-section {
+        padding: 20px 15px;
+    }
+
+    /* Calendar - 2 columns for very small screens */
+    .calendar-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Footer adjustments */
+    .footer-bar {
+        padding: 20px 15px;
+        font-size: 16px;
+    }
+    .footer-links {
+        padding: 12px 15px;
+        font-size: 13px;
     }
 }

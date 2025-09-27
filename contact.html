@@ -13,57 +13,74 @@
             <img src="images/logo-placeholder.png" alt="THABS FC Logo" class="logo">
             <nav>
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">TEAM</a></li>
-                    <li><a href="about.html">NEWS</a></li>
-                    <li><a href="about.html">MATCHES</a></li>
-                    <li><a href="about.html">TICKETS</a></li>
-                    <li><a href="about.html">SHOP</a></li>
-                    <li><a href="#" class="login-btn">LOGIN</a></li>
+                    <li><a href="index.html" >HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html" class="active">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="hero">
-            <img src="images/stadium-placeholder.jpg" alt="Stadium" class="hero-img">
-            <div class="hero-text">
-                <h1>CONTACT US</h1>
-                <div class="next-match">
-                    <span>NEXT MATCH: THABS FC vs UNITED FC - NOV 15</span>
-                    <a href="#" class="buy-tickets">BUY TICKETS</a>
-                </div>
+    <!-- Contact Hero Section -->
+    <section class="hero-banner">
+        <h1>CONTACT US</h1>
+        <div class="next-match">
+            <div class="match-info">
+                <p>NEXT MATCH: THABS FC vs UNITED FC - NOV 15</p>
+                <a href="#tickets" class="btn btn-primary">BUY TICKETS</a>
             </div>
-        </section>
-        <section class="contact-section">
-            <div class="contact-container">
-                <div class="contact-form">
+        </div>
+    </section>
+    <!-- Contact Content -->
+    <main class="main">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form-section">
                     <h2>SEND US A MESSAGE</h2>
-                    <form>
-                        <input type="text" name="name" placeholder="Full Name" required>
-                        <input type="email" name="email" placeholder="Email Address" required>
-                        <input type="text" name="subject" placeholder="Subject" required>
-                        <textarea name="message" placeholder="Your Message" required></textarea>
-                        <button type="submit">SUBMIT</button>
+                    <form class="contact-form">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Full Name" class="form-input">
+                        
+                        <input type="email" placeholder="Email Address" class="form-input">
+                        
+                        <input type="text" placeholder="Subject" class="form-input">
+                        
+                        <label>Your Message</label>
+                        <textarea placeholder="Your message..." class="form-textarea"></textarea>
+                        
+                        <button type="submit" class="btn btn-primary">SUBMIT</button>
                     </form>
                 </div>
-                <div class="contact-info">
+                
+                <div class="find-us-section">
                     <h2>FIND US</h2>
-                    <p>General Enquiries<br>032-63579 7528</p>
-                    <p>THABS FC Headquarters<br>123 S Mane Avenue<br>Sports City, ST 45678</p>
-                    <p><span class="icon">&#9993;</span> 23565905DS.com<br><span class="icon">&#9993;</span> mntalalee@email.com</p>
-                    <div class="social-links">
-                        <a href="#"><span class="icon">&#xf099;</span></a>
-                        <a href="#"><span class="icon">&#xf09a;</span></a>
-                        <a href="#"><span class="icon">&#xf16d;</span></a>
-                        <span>Follow Us</span>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <p><strong>General Enquiries</strong></p>
+                            <p>032 63575 7578</p>
+                        </div>
+                        <div class="contact-item">
+                            <p>📞 08 235555105.com</p>
+                            <p>✉️ /mtallee@email.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <p><strong>THABS FC Headquarters</strong></p>
+                            <p>123 E Marie Avenue<br>Sports City, ST 45678</p>
+                        </div>
                     </div>
+                    
+                    <h3>Club Address</h3>
                     <div class="map-placeholder">
-                        <img src="images/map-placeholder.png" alt="Map">
+                        <!-- Map would go here -->
+                        <div class="map-marker">📍</div>
+                    </div>
+                    
+                    <div class="social-media">
+                        <p>🐦📷 Follow Us</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
     <footer>
         <div class="footer-bar">

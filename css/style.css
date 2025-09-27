@@ -404,25 +404,6 @@ nav ul li a:hover {
     left: 40px;
     color: var(--white);
 }
-.hero-text h1 {
-    font-size: 48px;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0 0 20px 0;
-    letter-spacing: 2px;
-}
-.next-match {
-    background: var(--white);
-    color: var(--main-blue);
-    padding: 16px 24px;
-    border-radius: 4px;
-    font-size: 18px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    margin-top: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
 .buy-tickets {
     background: var(--accent-gold);
     color: var(--main-blue);
@@ -494,26 +475,34 @@ nav ul li a:hover {
 
 /* --- CONTACT HERO BANNER --- */
 .hero-banner {
-    background: #15305a;
-    min-height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     position: relative;
-    padding: 48px 64px;
-    text-align: center;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    background: #15305a;
 }
-.hero-banner h1 {
+.hero-image {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+.hero-banner .btn.btn-primary {
+    background: var(--accent-gold);
+    color: var(--main-blue);
+    padding: 8px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
     font-family: 'Montserrat', sans-serif;
-    font-size: 3.2rem;
-    font-weight: 800;
-    margin-bottom: 2rem;
-    letter-spacing: 2px;
-    color: #fff;
-    text-shadow: 0 2px 12px rgba(26,58,107,0.4);
-    text-transform: uppercase;
+    transition: background 0.2s;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    font-size: 1rem;
+}
+.hero-banner .btn.btn-primary:hover {
+    background: #f7d88c;
 }
 
 /* --- CONTACT CONTENT --- */
@@ -713,9 +702,20 @@ footer {
     }
     .hero-banner {
         padding: 32px 24px;
-        min-height: 280px;
+        height: 220px;
+    }
+    .hero-banner .hero-image {
+        height: 220px;
     }
     .hero-banner h1 {
         font-size: 2.5rem;
+        top: 20px;
+        left: 20px;
+    }
+    .hero-banner .next-match {
+        bottom: 20px;
+        left: 20px;
+        padding: 12px 18px;
+        font-size: 1rem;
     }
 }
